@@ -1,0 +1,131 @@
+{
+  "name": "Harsh Saki",
+  "headline": "Principal AI Engineer | AI Product Owner | Generative AI & Agentic AI | LLM Engineering | MLOps",
+  "location": "Bengaluru, Karnataka, India",
+  "phone": "+91 9907503025",
+  "email": "harshneema@gmail.com",
+  "linkedin": "linkedin.com/in/harsh-saki-63894821",
+  "years_experience": 12,
+  "summary": "Principal AI Engineer and AI Product Owner with 12+ years of experience designing, building, and scaling enterprise AI, Generative AI, and Agentic AI solutions for Pharmaceutical and Life Sciences. Supported 15+ pharmaceutical AI use cases across 29 sites and 8 countries, delivering 10 end-to-end applications. Experienced with production LLM applications, RAG platforms, AI agents, AI copilots, and MLOps using Azure OpenAI, LangChain, LangGraph, Python, Azure Machine Learning, and Azure Databricks. Own AI product strategy, roadmaps, use-case prioritization, architecture, deployment, monitoring, stakeholder management, and business outcomes. Lead 45 internal and external resources, manage 25 Databricks/Azure pipelines, and have contributed to more than $25M in reported savings/business impact.",
+  "target_titles": [
+    "AI Product Owner",
+    "GenAI Product Manager",
+    "Head of AI",
+    "Director of AI Engineering",
+    "VP of AI",
+    "Principal AI Engineer"
+  ],
+  "skills": {
+    "Generative AI / Agentic AI": ["Azure OpenAI", "GPT", "Claude", "Gemini", "Prompt Engineering", "AI Agents", "Agentic AI", "Function Calling", "Tool Orchestration", "Structured Outputs", "AI Copilots", "Vibe Coding"],
+    "LLM Engineering": ["Retrieval-Augmented Generation (RAG)", "LangChain", "LangGraph", "Vector Search", "Embeddings", "Semantic Search", "Neo4j", "Knowledge Graphs"],
+    "AI / Machine Learning": ["Azure Machine Learning", "MLflow", "MLOps", "NLP", "Predictive Analytics", "Model Monitoring", "Model Validation", "Model Lifecycle Management", "Model Accuracy", "Scikit-learn"],
+    "Programming / Frameworks": ["Python", "PySpark", "SQL", "FastAPI", "Pandas", "NumPy"],
+    "Cloud / Data Engineering": ["Azure Databricks", "Delta Lake", "ADLS", "Azure Data Factory (ADF)", "dbt", "Unity Catalog", "Azure DevOps", "Azure Synapse Analytics", "Azure Key Vault", "Azure AD"],
+    "AI Product Management": ["AI Product Strategy", "Product Roadmaps", "Use-Case Prioritization", "Product Backlog Management", "Agile/Scrum", "Stakeholder Management", "Portfolio Management", "Cross-Functional Leadership", "GxP Compliance", "Data Governance"]
+  },
+  "experience": [
+    {
+      "company": "GSK",
+      "title": "Principal AI Engineer & AI Product Owner (Principal Data Engineer)",
+      "location": "Bengaluru, Karnataka, India",
+      "start": "2023-11",
+      "end": "Present",
+      "bullets": [
+        "Own the end-to-end AI product lifecycle across 15+ pharmaceutical AI use cases, 29 sites, and 8 countries, translating business needs into product strategy, roadmaps, prioritized backlogs, solution architecture, delivery plans, and measurable outcomes.",
+        "Led delivery of 10 end-to-end AI applications from ideation and architecture through production deployment and operational support, aligning engineering execution with stakeholder priorities, business value, and enterprise AI adoption.",
+        "Architect production-grade Agentic AI solutions using LLM reasoning, function/tool calling, workflow orchestration, and enterprise API integration to automate complex business workflows and reduce manual effort.",
+        "Built enterprise Generative AI copilots using Azure OpenAI and Retrieval-Augmented Generation (RAG), grounding LLM responses in enterprise knowledge to improve insight generation, information access, and user productivity.",
+        "Led global rollout and lifecycle management of Investigation AI (IRO), IAI, and CFU solutions, combining AI automation, model retraining, and cross-functional leadership to reduce months of manual effort across pharmaceutical workflows.",
+        "Delivered automated processes that save approximately 3 weeks of repetitive work per cycle, accelerating investigation and decision-making while improving operational productivity.",
+        "Drove model quality and production reliability through Azure Machine Learning, monitoring, validation, and retraining practices, achieving model accuracy exceeding 98% for targeted use cases.",
+        "Led 45 internal and external resources across AI engineering, data engineering, product delivery, and operations, coordinating cross-functional execution across multiple pharmaceutical sites and countries.",
+        "Managed and optimized 25 Databricks and Azure data/AI pipelines supporting pharmaceutical supply-chain and AI workloads, improving scalable data processing and model delivery capabilities.",
+        "Delivered AI, automation, and data initiatives contributing to more than $25M in reported savings/business impact, connecting AI product delivery to measurable enterprise value.",
+        "Scaled AI-assisted engineering practices using Claude Code and Vibe Coding across engineering teams to accelerate development and improve delivery velocity.",
+        "Architected a secure Azure Data Lake-based bioinformatics data platform for compliant R&D data management and integrated Generative AI into drug discovery workflows to accelerate compound identification.",
+        "Managed GxP and Non-GxP platforms across Manufacturing and R&D, including Archer, ITMS, ServiceNow, Veeva, SailPoint, IAM, MIM, Statistica, Design Expert, and SIMCA."
+      ]
+    },
+    {
+      "company": "GSK",
+      "title": "Senior AI Engineer & Data Engineer (Senior Data Engineer)",
+      "location": "Bengaluru, Karnataka, India",
+      "start": "2022-02",
+      "end": "2023-11",
+      "bullets": [
+        "Defined AI/ML product roadmaps aligned with digital transformation strategy, converting business requirements into prioritized AI use cases, product backlogs, delivery plans, and Agile/Scrum execution.",
+        "Led Generative AI, NLP, predictive analytics, and machine learning solutions across pharmaceutical research and manufacturing from ideation and prototyping through production deployment.",
+        "Designed MLOps pipelines using Azure Machine Learning, Azure Databricks, MLflow, and Azure DevOps for continuous training, deployment, monitoring, and model lifecycle management.",
+        "Built ChatGPT-based copilots and AI automation workflows using Azure OpenAI and Logic Apps, improving information access and automating knowledge-intensive business processes.",
+        "Developed knowledge-grounded RAG assistants for SOPs and internal documentation retrieval, combining LLMs, enterprise data, and semantic search to improve knowledge discovery.",
+        "Led DevOps and GitHub migration initiatives, establishing CI/CD pipelines and multi-environment Azure deployment practices for scalable AI and data workloads.",
+        "Contributed to the Code Orange platform core mesh architecture, enabling governed analytics, enterprise data accessibility, and AI-driven use cases."
+      ]
+    },
+    {
+      "company": "Shell",
+      "title": "AI/ML & Cloud Data Engineer (Software Engineer MI)",
+      "location": "Bangalore, India",
+      "start": "2018-05",
+      "end": "2022-02",
+      "bullets": [
+        "Designed and deployed end-to-end Azure data and AI pipelines covering ingestion, transformation, model delivery, and analytics for enterprise predictive applications.",
+        "Developed Azure Machine Learning predictive models using Python, scikit-learn, Pandas, and NumPy to identify adverse reactions and operational anomalies, supporting improved operational safety.",
+        "Architected scalable Azure data engineering platforms using Azure Data Factory, ADLS Gen1/Gen2, Azure Databricks, and Azure SQL Database for AI/ML and analytics workloads.",
+        "Developed scalable PySpark and Databricks transformation pipelines for machine learning and analytics workloads, enabling reusable data processing capabilities.",
+        "Implemented CI/CD automation using Azure DevOps and GitHub to improve deployment reliability, repeatability, and engineering productivity.",
+        "Integrated SAP HANA with Azure data platforms to enable near-real-time analytics and business intelligence across oil, gas, and energy use cases."
+      ]
+    },
+    {
+      "company": "Inteliment Technologies",
+      "title": "IT Consultant",
+      "location": "Pune, India",
+      "start": "2017-12",
+      "end": "2018-04",
+      "bullets": [
+        "Designed Azure cloud data pipelines using ADLS Gen2, Azure Data Factory, Azure Databricks, and PySpark for scalable data engineering and analytics workloads.",
+        "Implemented data solutions aligned with GxP and HIPAA compliance requirements for regulated healthcare and life sciences environments.",
+        "Developed Power BI analytics solutions for clinical research, converting enterprise data into decision-support insights."
+      ]
+    },
+    {
+      "company": "Info Analytics System Pvt. Ltd.",
+      "title": "SAP HANA/BW Consultant",
+      "location": "Pune, India",
+      "start": "2014-10",
+      "end": "2017-12",
+      "bullets": [
+        "Designed and delivered SAP BW on HANA data models including Advanced DSO, Composite Providers, CDS Views, and Calculation Views for enterprise analytics.",
+        "Implemented enterprise data replication and integration using SAP Landscape Transformation (SLT) and SAP BusinessObjects Data Services."
+      ]
+    }
+  ],
+  "projects": [
+    "Investigation AI (IRO)",
+    "IAI",
+    "Enterprise RAG Knowledge Assistant",
+    "CFU Model Retraining Pipeline",
+    "AI-Powered Drug Discovery",
+    "Agentic AI Workflow Automation",
+    "Pharma Supply Chain AI"
+  ],
+  "certifications": [
+    "AI Engineer Certification",
+    "Neo4j Certified Professional",
+    "Databricks Academy Accreditation - Lakehouse Fundamentals",
+    "Artificial Intelligence Micro-Certification",
+    "Claude Code in Action",
+    "Computer Networks"
+  ],
+  "honors": [
+    "Ahead Together Award (2024)",
+    "Shell Downstream VP CIO Award (2020)",
+    "GSK Bronze Global Employee Recognition Award"
+  ],
+  "education": [
+    {"degree": "Master's Degree, Computer Science", "school": "Lakshmi Narayan College of Technology", "start": "2011", "end": "2014"},
+    {"degree": "Bachelor of Engineering, Information Technology", "school": "Mandsaur Institute of Technology", "start": "2004", "end": "2008"}
+  ],
+  "languages": ["English (Native or Bilingual)", "Hindi (Full Professional)"]
+}

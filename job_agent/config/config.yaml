@@ -1,0 +1,93 @@
+# Job Agent configuration
+# All fields here were chosen based on the target user's stated preferences:
+# India-only search, senior AI product/leadership titles, ToS-aware apply routing.
+
+search:
+  country: "India"
+  remote_ok: true
+  relocation: false          # India-only, no international relocation
+  titles:
+    - "AI Product Owner"
+    - "AI Product Manager"
+    - "GenAI Product Manager"
+    - "Head of AI"
+    - "Director of AI Engineering"
+    - "VP of AI"
+    - "Principal AI Engineer"
+  # Any of these boosts a match score; used for JD keyword extraction too.
+  keywords_any:
+    - "Generative AI"
+    - "Agentic AI"
+    - "LLM"
+    - "RAG"
+    - "MLOps"
+    - "Azure OpenAI"
+    - "LangChain"
+    - "LangGraph"
+    - "AI Product Strategy"
+  min_years_experience: 8
+  min_match_score: 0.35      # 0-1 scale, see src/job_agent/matching.py
+
+sources:
+  greenhouse:
+    enabled: true
+    # Add Greenhouse board tokens for companies you want to track,
+    # e.g. a company whose careers page is boards.greenhouse.io/<token>
+    boards: []
+  lever:
+    enabled: true
+    # Add Lever company slugs, e.g. jobs.lever.co/<slug>
+    boards: []
+  indeed:
+    enabled: true
+    mode: "mcp_import"
+    # Populate data/indeed_jobs.json by running, from an interactive Claude
+    # Code session with the Indeed MCP connector attached:
+    #   mcp__Indeed__search_jobs(query=..., location="India")
+    # and saving the results in the schema documented in
+    # src/job_agent/sources/indeed_import.py
+    import_file: "data/indeed_jobs.json"
+  linkedin:
+    enabled: true
+    mode: "manual_import"
+    # LinkedIn aggressively detects and bans automated scraping/apply.
+    # Export or paste job postings you find manually into this file
+    # (schema documented in src/job_agent/sources/linkedin_import.py).
+    # LinkedIn postings are ALWAYS search/tailor only, never auto-submitted.
+    import_file: "data/linkedin_jobs.json"
+
+apply:
+  # "auto"       -> auto-submit allowed for sources listed in auto_submit_sources
+  # "stage_only" -> never auto-submit anything, just generate + stage documents
+  mode: "auto"
+  # Safety net: even in "auto" mode, dry_run=true stops before the final
+  # submit click on every apply engine and just logs what WOULD happen.
+  # Flip to false only when you've reviewed dry-run output and are ready.
+  dry_run: true
+  max_applications_per_day: 15
+  cooldown_seconds_between_applications: 45
+  # Only these sources are ever eligible for real auto-submit, because their
+  # application forms are simple/standardized and their ToS is not hostile
+  # to applicant-initiated automation the way LinkedIn's is.
+  auto_submit_sources:
+    - "greenhouse"
+    - "lever"
+  # Everything else is generated and staged in outbox/ for you to review and
+  # submit by hand.
+  stage_only_sources:
+    - "indeed"
+    - "linkedin"
+
+generation:
+  # If set (or ANTHROPIC_API_KEY is exported), resume bullet phrasing and the
+  # cover letter are polished by the Claude API for a more natural, tailored
+  # read. Without it, a deterministic template-based generator is used.
+  use_llm_enhancement: true
+  llm_model: "claude-sonnet-5"
+  max_resume_bullets_per_role: 5
+
+output:
+  resume_format: "pdf"
+  outbox_dir: "outbox"
+  applications_log: "data/applications_log.csv"
+  seen_jobs_db: "data/jobs_seen.json"

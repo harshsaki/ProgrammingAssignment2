@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# Generated/user-specific data -- keep the folders, not their contents.
+data/*.json
+data/*.csv
+outbox/*
+.generated/
+
+!data/.gitkeep
+!outbox/.gitkeep
+*.egg-info/

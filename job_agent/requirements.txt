@@ -1,0 +1,13 @@
+requests>=2.31
+PyYAML>=6.0
+reportlab>=4.0
+
+# Optional: only needed for `job-agent run` with real browser auto-apply.
+# playwright>=1.40
+# (after installing, run: playwright install chromium)
+
+# Optional: only needed for LLM-polished resume/cover-letter text.
+# anthropic>=0.40
+
+# Dev/test only:
+pytest>=8.0

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-agent"
+version = "0.1.0"
+description = "Search, tailor-resume/cover-letter, and selectively auto-apply to job postings."
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "PyYAML>=6.0",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+apply = ["playwright>=1.40"]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+job-agent = "job_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
